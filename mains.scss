@@ -1,0 +1,202 @@
+$primary-color: yellow; 
+
+$red: hsl(0 , 0, 100);
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(10, 80px);
+    grid-template-rows: repeat(10, 80px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+@mixin layout {
+    border: 1px solid black;
+    width: 1770px;
+}
+
+@mixin flex-all {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@mixin btn {
+    position: absolute;
+    width: 153px;
+    height: 63px;
+    border: 1px solid;
+}
+
+body {
+    @include flex-all;
+}
+
+.backround {
+    @include layout;
+    height: 4000px;
+    color: aqua;
+}
+
+.Rect {
+    border: 1px solid black;
+    width: 40px;
+    height: 20px;
+}   
+
+.Header {
+    @include grid;
+    justify-content: space-around;
+    @include layout;
+    height: 821px;
+    background: url(images/header.png);
+
+    .scroll-btn {
+        grid-area: 6/5;
+    }
+
+    &__header {
+        font-size: 48px;
+        grid-area: 2/5;
+
+        .header__paragraph {
+            font-size: 22px
+        }
+    }
+
+    .search-bar {
+        width: 503px;
+        height: 63px;
+        grid-area: 4/4;
+
+        .Header__search {
+            @include btn;
+            grid-area: 6/5;
+        }
+
+        .search-eng {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+
+
+    .menu__bar {
+        width: 1700px;
+        height: 60px;
+        grid-row-start: 10;
+        grid-row-end: -1;
+        border: solid 1px;
+        grid-column-start: -11;
+        grid-column-end: -1;
+        justify-content: end;
+        align-self: center
+    }
+}
+
+.Why-Choose-Us {
+    @include grid;
+    grid-column-gap: 100px;
+    @include layout;
+    height: 685px;
+
+    &__btn {
+        grid-area: 7/3;
+        align-self: end;
+    }
+    &__header {
+        font-size: 36px; 
+        align-self: center;
+        grid-row: 4;
+        grid-column: 3/span3;
+    }
+    &__paragraph {
+        font-size: 16px;
+        color: #E8E8E8;
+        grid-row: 5/ span 3;
+        grid-column: 3/ span 3;
+    }
+    &__up {
+        grid-area: 4/8;
+    }
+    &__down {
+        grid-area: 6/8;
+    }
+}
+
+.How-It-Works {
+    width: auto;
+    height: 340px;
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+
+    /*
+    &__search {
+        
+    }
+    */
+}
+
+.section {
+    @include layout;
+    @include grid;
+
+    height: 1400px;
+
+    &__group1 {
+        border: solid 1px;
+        width: 450px;
+        height: 300px;
+        grid-area: 4;
+        justify-self: center;
+        margin-right: 50px;
+    }
+    &__group2 {
+        border: solid 1px;
+        width: 450px;
+        height: 300px;
+        grid-area: 7;
+        justify-self: center;
+        margin-left: 50px;
+    }
+    .rect {
+        width: 1770px;
+        height: 20px;
+    }
+}
+
+.Testimonial {
+    @include layout;
+    Height: 731px;
+}
+
+.Footer {
+    @include layout;
+    Height: 271px;
+}
+
+
+
+
+button.btn.add::before {
+    font-family: fontAwesome;
+    content: "\f067\00a0";
+  }
+  
+  button.btn.edit::before {
+    font-family: fontAwesome;
+    content: "\f044\00a0";
+  }
+  
+  button.btn.save::before {
+    font-family: fontAwesome;
+    content: "\f00c\00a0";
+  }
+  
+  button.btn.cancel::before {
+    font-family: fontAwesome;
+    content: "\f00d\00a0";
+  }
