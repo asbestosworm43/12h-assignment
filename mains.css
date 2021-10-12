@@ -1,0 +1,240 @@
+@charset "UTF-8";
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.backround {
+  border: 1px solid black;
+  width: 1770px;
+  height: 4000px;
+  color: aqua;
+}
+
+.Rect {
+  border: 1px solid black;
+  width: 40px;
+  height: 20px;
+}
+
+.Header {
+  border: 1px solid black;
+  width: 1770px;
+  height: 821px;
+  background: url(images/header.png);
+}
+.Header .menu__bar {
+  border: 1px solid black;
+  width: 1770px;
+  height: 60px;
+}
+.Header__search {
+  position: absolute;
+  width: 153px;
+  height: 63px;
+  border: 1px solid;
+}
+
+.Why-Choose-Us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr 0px 1fr 0px 1fr 0px 1fr 0px 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: 1px solid black;
+  width: 1770px;
+  height: 685px;
+}
+
+.Why-Choose-Us > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.Why-Choose-Us > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.Why-Choose-Us > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.Why-Choose-Us > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.Why-Choose-Us > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.Why-Choose-Us > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.Why-Choose-Us > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.Why-Choose-Us > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.Why-Choose-Us > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.Why-Choose-Us > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+
+.Why-Choose-Us > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.Why-Choose-Us > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.Why-Choose-Us > *:nth-child(13) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.Why-Choose-Us > *:nth-child(14) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+
+.Why-Choose-Us > *:nth-child(15) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 9;
+}
+
+.Why-Choose-Us > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.Why-Choose-Us > *:nth-child(17) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.Why-Choose-Us > *:nth-child(18) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+
+.Why-Choose-Us > *:nth-child(19) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+}
+
+.Why-Choose-Us > *:nth-child(20) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 9;
+}
+
+.Why-Choose-Us > *:nth-child(21) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+
+.Why-Choose-Us > *:nth-child(22) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+}
+
+.Why-Choose-Us > *:nth-child(23) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+}
+
+.Why-Choose-Us > *:nth-child(24) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 7;
+}
+
+.Why-Choose-Us > *:nth-child(25) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 9;
+}
+.Why-Choose-Us__btn {
+  position: absolute;
+  width: 153px;
+  height: 63px;
+  border: 1px solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: 4/2;
+  -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.How-It-Works {
+  border: 1px solid black;
+  width: 1770px;
+  Height: 340px;
+}
+
+.section {
+  border: 1px solid black;
+  width: 1770px;
+  Height: 1400px;
+}
+
+.Testimonial {
+  border: 1px solid black;
+  width: 1770px;
+  Height: 731px;
+}
+
+.Footer {
+  border: 1px solid black;
+  width: 1770px;
+  Height: 271px;
+}
+
+button.btn.add::before {
+  font-family: fontAwesome;
+  content: " ";
+}
+
+button.btn.edit::before {
+  font-family: fontAwesome;
+  content: " ";
+}
+
+button.btn.save::before {
+  font-family: fontAwesome;
+  content: " ";
+}
+
+button.btn.cancel::before {
+  font-family: fontAwesome;
+  content: " ";
+}
